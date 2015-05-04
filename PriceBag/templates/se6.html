@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<title>SAMSUNG s6 edge</title>
+<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
+<link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class=" container-fluid">
+    	<!-- Logo center -->
+        <br>
+    	<div class="row">
+    	<div class="col-md-4">
+        	<br>
+            <a class="btn btn-primary" href="/phones">Back</a>
+        </div>
+    	<div class=" center-block col-md-4">
+    		<img src="{{url_for('static', filename='logo/priceBag.png')}}" class="img-responsive" alt="resposive logo">
+        </div>
+        <div class="col-md-4">
+        </div>
+        <br>
+        </div>
+    	<!-- phone image center -->
+    	<div class="row">
+    	<div class="col-md-4">
+        </div>
+    	<div class=" center-block col-md-4">
+        	<h1 class="h1">Samsung Galaxy S6 Edge</h1>
+    		<img src="{{url_for('static', filename='img/s6.png')}}" class="img-responsive"   alt="resposive logo">
+        </div>
+        <div class="col-md-4">
+        </div>
+        <br>
+        </div>
+        <!-- displaying amazon details-->
+    	<div class="row">
+        	<div class="col-md-4">
+            	<img style="padding-left: 60px" src="{{url_for('static',filename="img/amazon.png")}}" alt="amazon logo">
+            </div>
+            <div class="col-md-8">
+				<h3>{{ az_t }}</h3>
+    			<h3><p class="label label-warning"> rating: {{ az_rate }}</p></h3>
+    			<p class="text-success bg-info"> cost {{ az_cst1 }}</p>
+    			<p class="text-primary bg-success"> cost {{ az_cst2 }}</p>
+                <a href={{az_url}} target="_blank" class="btn btn-info">Amazon link</a>
+            </div>
+        </div>
+        <!-- displaying ebay details -->
+        <div class="row">
+        	<div class="col-md-4">
+            	<img style="padding-left: 60px" src="{{url_for('static',filename="img/ebay.png")}}" alt="ebay logo">
+            </div>
+            <div class="col-md-8">
+				<h3>{{ e_t }}</h3>
+    			<p class="text-success bg-info"> cost {{ e_cst }}</p>
+                <a href={{e_url}} target="_blank" class="btn btn-info">eBay link</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
