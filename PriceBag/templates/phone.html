@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Price Bag</title>
+<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
+<link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:">
+	<div class="container">
+    		<div class="row">
+            	<div class="col-md-4">
+                </div>
+                <div class="col-md-4 center-block">
+						<img src="{{url_for('static', filename='logo/priceBag.png')}}" class="img-responsive" alt="resposive logo">
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                	<p class="h1">iPhones</p>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-4">
+                </div>
+                <div class="col-md-2">
+                	<a href="/iphone5s"><img src="{{url_for('static', filename='img/5s.png')}}" class="img-responsive" alt="resposive logo">iPhone 5s</a>
+                </div>
+                <div class="col-md-2">
+                	<a href="/iphone6"><img src="{{url_for('static', filename='img/6.jpeg')}}" class="img-responsive" alt="resposive logo"> iPhone 6</a>
+                </div>
+                 <div class="col-md-2">
+                	<a href="/iphone6plus"><img src="{{url_for('static', filename='img/6.jpeg')}}" class="img-responsive" alt="resposive logo"> iPhone 6 Plus</a>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                	<p class="h1">Samsung galaxy</p>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-4">
+                </div>
+                <div class="col-md-2">
+                	<a href="/samsungs5"><img src="{{url_for('static', filename='img/s5.jpg')}}" class="img-responsive" alt="resposive logo">Galaxy s5</a>
+                </div>
+                <div class="col-md-2">
+                	<a href="/samsung_s6_edge"><img src="{{url_for('static', filename='img/s6.png')}}" class="img-responsive" alt="resposive logo"> Galaxy s6 edge</a>
+                </div>
+                 <div class="col-md-2">
+                	<a href="/note4"><img src="{{url_for('static', filename='img/note4.png')}}" class="img-responsive" alt="resposive logo"> Note 4</a>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

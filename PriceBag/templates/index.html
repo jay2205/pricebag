@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Price Bag</title>
+<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
+<link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:">
+	<div class=" =container" style="padding-top:150px">
+    		<div class="row">
+            	<div class="col-md-4">
+                </div>
+                <div class="col-md-4 center-block">
+						<img src="{{url_for('static', filename='logo/priceBag.png')}}" class="img-responsive" alt="resposive logo">
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-4">
+                </div>
+                 <div class="col-md-1"></div>
+                <div class="col-md-1" style="padding-top:10px">
+                <br><p><a class="btn btn-success btn-lg" href="/phones">Search</a></p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
